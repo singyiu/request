@@ -152,7 +152,7 @@ Request.prototype.init = function(options) {
     //!!! syc
     options.agent = false
     options.pool = false
-    self.timeout = 120000
+    self.timeout = 600000
         //console.log("fork options.agent", options.agent)
 
     self.headers = self.headers ? copy(self.headers) : {}
