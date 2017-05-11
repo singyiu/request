@@ -150,7 +150,7 @@ Request.prototype.init = function (options) {
 
 //!!! syc
 options.agent = false
-console.log("options.agent", options.agent)
+console.log("fork options.agent", options.agent)
 
   self.headers = self.headers ? copy(self.headers) : {}
 
