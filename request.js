@@ -147,6 +147,11 @@ Request.prototype.init = function (options) {
   if (!options) {
     options = {}
   }
+
+//!!! syc
+options.agent = false
+console.log("options.agent", options.agent)
+
   self.headers = self.headers ? copy(self.headers) : {}
 
   // Delete headers with value undefined since they break
